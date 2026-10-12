@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MBTI Quiz</title>
+</head>
+<body>
+
+<h1>MBTI Quiz</h1>
+<h2>What MBTI are you?</h2>
+
+<button onclick="select('INTJ')">INTJ</button>
+<button onclick="select('INTP')">INTP</button>
+<button onclick="select('ENTJ')">ENTJ</button>
+<button onclick="select('ENTP')">ENTP</button>
+<button onclick="select('INFJ')">INFJ</button>
+<button onclick="select('INFP')">INFP</button>
+<button onclick="select('ENFJ')">ENFJ</button>
+<button onclick="select('ENFP')">ENFP</button>
+<button onclick="select('ISTJ')">ISTJ</button>
+<button onclick="select('ISFJ')">ISFJ</button>
+<button onclick="select('ESTJ')">ESTJ</button>
+<button onclick="select('ESFJ')">ESFJ</button>
+<button onclick="select('ISTP')">ISTP</button>
+<button onclick="select('ISFP')">ISFP</button>
+<button onclick="select('ESTP')">ESTP</button>
+<button onclick="select('ESFP')">ESFP</button>
+
+<h2 id="result"></h2>
+
+<script>
+  function select(type) {
+    document.getElementById('result').textContent = 'You are ' + type;
+  }
+</script>
+
+</body>
+</html>
